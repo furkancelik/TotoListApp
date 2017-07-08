@@ -9,6 +9,7 @@
   "rules": {
     "no-console": "off",
     "react/jsx-filename-extension": "off",
-    "react/prefer-stateless-function": "off"
+    "react/prefer-stateless-function": "off",
+    "response.data": "off"
   }
 }

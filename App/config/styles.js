@@ -11,6 +11,13 @@ export default StyleSheet.create({
     justifyContent: 'flex-start',
     marginTop: 5,
   },
+  containerCenter: {
+    flex: 1,
+    marginTop: 5,
+    alignItems: 'center',
+    justifyContent: 'center',
+    flexDirection: 'row',
+  },
   textInput: {
     flex: 1,
     backgroundColor: '#FFF',
@@ -32,4 +39,14 @@ export default StyleSheet.create({
     padding: 8,
   },
   saveBtnTxt: { fontSize: 15, color: '#FFF', fontWeight: 'bold' },
+  btn: {
+    borderWidth: 1,
+    borderColor: '#ccc',
+    backgroundColor: '#06f',
+    // flex: 1,
+    margin: 10,
+    padding: 10,
+    borderRadius: 5,
+  },
+  btnTxt: { color: '#FFF', fontSize: 16, textAlign: 'center' },
 });
