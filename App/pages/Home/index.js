@@ -30,7 +30,10 @@ export default class Home extends Component {
             <Text style={styles.btnTxt}>Flat List 1</Text>
           </TouchableOpacity>
 
-          <TouchableOpacity style={styles.btn}>
+          <TouchableOpacity
+            style={styles.btn}
+            onPress={() => this.props.navigation.navigate('flatList2')}
+          >
             <Text style={styles.btnTxt}>FlatList 2</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.btn}>

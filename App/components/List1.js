@@ -6,27 +6,14 @@ export default class MyListItem extends React.PureComponent {
   render() {
     console.log(this.props);
     return (
-      <View
-        style={{
-          paddingVertical: 10,
-        }}
+      <TouchableOpacity
+        style={{ borderBottomWidth: 1, borderColor: '#ccc', padding: 10 }}
+        onPress={this.props.edit}
       >
-        <TouchableOpacity
-          onPress={() => {
-            console.log('a');
-          }}
-        >
-          <Text
-            style={{
-              color: '#000',
-              height: 40,
-              justifyContent: 'center',
-            }}
-          >
-            {this.props.item}
-          </Text>
-        </TouchableOpacity>
-      </View>
+        <Text>
+          item:{this.props.item} - index:{this.props.index}
+        </Text>
+      </TouchableOpacity>
     );
   }
 }
